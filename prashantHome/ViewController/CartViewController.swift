@@ -11,6 +11,6 @@ class CartViewController: BaseViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Cart"
     }
 }

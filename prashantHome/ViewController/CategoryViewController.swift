@@ -11,6 +11,6 @@ class CategoryViewController: BaseViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Category"
     }
 }

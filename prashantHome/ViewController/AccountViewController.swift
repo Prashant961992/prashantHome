@@ -11,6 +11,6 @@ class AccountViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Account"
     }
 }

@@ -11,6 +11,6 @@ class ZoodPayViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Zood Pay"
     }
 }

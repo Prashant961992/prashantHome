@@ -27,27 +27,10 @@ class BaseWebservice: NSObject {
     
     func call(url : String, isdictionaryRequired : Bool = true , method : HTTPMethod, parameters :  Any, result : @escaping (_ value: Any?, _ error: NSError?) -> Void)  {
         
-        var data : Data? = nil
+        let data : Data? = nil
         
         let finalURL = URL(string: baseUrl + url)!
-        //        var finalURL : URL? = nil
-        //
-        //        if method == HTTPMethod.get || method == HTTPMethod.delete {
-        //            var urlComponents = URLComponents(url: tempURL, resolvingAgainstBaseURL: false)
-        //            if let peram = parameters as? [String : Any] {
-        //                let queryItems = peram.map{
-        //                    return URLQueryItem(name: "\($0)", value: "\($1)")
-        //                }
-        //                urlComponents?.queryItems = queryItems
-        //                finalURL = urlComponents?.url
-        //            }
-        //        } else {
-        //            finalURL = tempURL
-        //            data = try! JSONSerialization.data(withJSONObject: parameters)
-        //        }
-        
-        //        print("finalURL : " + (finalURL?.absoluteString ?? ""))
-        //        print("Token" + "\(token)")
+       
         var request = URLRequest(url: finalURL)
         request.httpMethod = method.rawValue
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

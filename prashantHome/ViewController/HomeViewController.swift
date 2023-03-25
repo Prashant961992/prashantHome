@@ -24,6 +24,8 @@ class HomeViewController: BaseViewController {
 
         let searchBar = UISearchBar()
         searchBar.sizeToFit()
+        searchBar.searchTextField.backgroundColor = UIColor.white
+        searchBar.placeholder = "Search for products"
         self.navigationItem.titleView = searchBar
         createCallbacks()
         viewModel.getBannerData()
@@ -120,11 +122,11 @@ extension HomeViewController : UICollectionViewDataSource{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCollectionViewCell", for: indexPath) as! BannerCollectionViewCell
             cell.adsBanner.isInfinite = true
             cell.adsBanner.interitemSpacing = 10
-            cell.adsBanner.transformer = FSPagerViewTransformer(type: .crossFading)
+            cell.adsBanner.transformer = FSPagerViewTransformer(type: .zoomOut)
             cell.adsBanner.numberOfItems = self.viewModel.model.bannerData.value.data?.mainBanner?.count ?? 0
             cell.adsBanner.dataSource = self
             cell.adsBanner.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
-            cell.adsBanner.automaticSlidingInterval = 2.0
+            cell.adsBanner.automaticSlidingInterval = 1.5
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
@@ -187,5 +189,13 @@ extension HomeViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
+        return 0.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat{
+        return 0.0
     }
 }
