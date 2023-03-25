@@ -18,6 +18,27 @@
 		A804954929CEABCE005B67CD /* prashantHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804954829CEABCE005B67CD /* prashantHomeTests.swift */; };
 		A804955329CEABCE005B67CD /* prashantHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804955229CEABCE005B67CD /* prashantHomeUITests.swift */; };
 		A804955529CEABCE005B67CD /* prashantHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804955429CEABCE005B67CD /* prashantHomeUITestsLaunchTests.swift */; };
+		A804956229CEAE25005B67CD /* BaseWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804956129CEAE25005B67CD /* BaseWebservice.swift */; };
+		A804956829CEAEE9005B67CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804956729CEAEE8005B67CD /* BaseViewController.swift */; };
+		A804956B29CEAF41005B67CD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804956A29CEAF41005B67CD /* BaseViewModel.swift */; };
+		A804957029CEAFDB005B67CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804956F29CEAFDB005B67CD /* HomeViewController.swift */; };
+		A804957229CEB010005B67CD /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804957129CEB010005B67CD /* CategoryViewController.swift */; };
+		A804957429CEB028005B67CD /* ZoodPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804957329CEB028005B67CD /* ZoodPayViewController.swift */; };
+		A804957629CEB03A005B67CD /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804957529CEB03A005B67CD /* CartViewController.swift */; };
+		A804957829CEB049005B67CD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804957729CEB049005B67CD /* AccountViewController.swift */; };
+		A804957A29CEB0B9005B67CD /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804957929CEB0B9005B67CD /* HomeRepository.swift */; };
+		A804957C29CEB13B005B67CD /* AdsBannerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804957B29CEB13B005B67CD /* AdsBannerResponse.swift */; };
+		A804958829CEB24D005B67CD /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804957F29CEB24D005B67CD /* FSPagerView.swift */; };
+		A804958929CEB24D005B67CD /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804958029CEB24D005B67CD /* FSPageViewTransformer.swift */; };
+		A804958A29CEB24D005B67CD /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804958229CEB24D005B67CD /* FSPagerViewCell.swift */; };
+		A804958B29CEB24D005B67CD /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804958329CEB24D005B67CD /* FSPagerViewLayoutAttributes.swift */; };
+		A804958C29CEB24D005B67CD /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804958429CEB24D005B67CD /* FSPageViewLayout.swift */; };
+		A804958D29CEB24D005B67CD /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804958529CEB24D005B67CD /* FSPageControl.swift */; };
+		A804958E29CEB24D005B67CD /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = A804958629CEB24D005B67CD /* FSPagerViewObjcCompat.m */; };
+		A804958F29CEB24D005B67CD /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804958729CEB24D005B67CD /* FSPagerCollectionView.swift */; };
+		A804959229CEB51F005B67CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804959129CEB51E005B67CD /* HomeViewModel.swift */; };
+		A804959529CEB574005B67CD /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804959329CEB574005B67CD /* BannerCollectionViewCell.swift */; };
+		A804959629CEB574005B67CD /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804959429CEB574005B67CD /* ProductCollectionViewCell.swift */; };
 		AEA5E5A063521BE9BD3EC3A6 /* Pods_prashantHomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6535543652239876BA2173 /* Pods_prashantHomeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +77,28 @@
 		A804954E29CEABCE005B67CD /* prashantHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = prashantHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A804955229CEABCE005B67CD /* prashantHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prashantHomeUITests.swift; sourceTree = "<group>"; };
 		A804955429CEABCE005B67CD /* prashantHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prashantHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A804956129CEAE25005B67CD /* BaseWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebservice.swift; sourceTree = "<group>"; };
+		A804956729CEAEE8005B67CD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A804956A29CEAF41005B67CD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A804956F29CEAFDB005B67CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A804957129CEB010005B67CD /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		A804957329CEB028005B67CD /* ZoodPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoodPayViewController.swift; sourceTree = "<group>"; };
+		A804957529CEB03A005B67CD /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		A804957729CEB049005B67CD /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		A804957929CEB0B9005B67CD /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		A804957B29CEB13B005B67CD /* AdsBannerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsBannerResponse.swift; sourceTree = "<group>"; };
+		A804957F29CEB24D005B67CD /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
+		A804958029CEB24D005B67CD /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
+		A804958129CEB24D005B67CD /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
+		A804958229CEB24D005B67CD /* FSPagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewCell.swift; sourceTree = "<group>"; };
+		A804958329CEB24D005B67CD /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		A804958429CEB24D005B67CD /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
+		A804958529CEB24D005B67CD /* FSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageControl.swift; sourceTree = "<group>"; };
+		A804958629CEB24D005B67CD /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
+		A804958729CEB24D005B67CD /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerCollectionView.swift; sourceTree = "<group>"; };
+		A804959129CEB51E005B67CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A804959329CEB574005B67CD /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		A804959429CEB574005B67CD /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		C58C85E4519FB55482E46A32 /* Pods-prashantHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prashantHomeTests.debug.xcconfig"; path = "Target Support Files/Pods-prashantHomeTests/Pods-prashantHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E788F99007A7F76321ECB98B /* Pods-prashantHome-prashantHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prashantHome-prashantHomeUITests.debug.xcconfig"; path = "Target Support Files/Pods-prashantHome-prashantHomeUITests/Pods-prashantHome-prashantHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8FADF9AC096F4F79E8AE660 /* Pods-prashantHome-prashantHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prashantHome-prashantHomeUITests.release.xcconfig"; path = "Target Support Files/Pods-prashantHome-prashantHomeUITests/Pods-prashantHome-prashantHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +182,12 @@
 		A804953029CEABCA005B67CD /* prashantHome */ = {
 			isa = PBXGroup;
 			children = (
+				A804959029CEB3D4005B67CD /* Cell */,
+				A804957D29CEB218005B67CD /* Source */,
+				A804956C29CEAF81005B67CD /* ViewModel */,
+				A804956629CEAEAA005B67CD /* ViewController */,
+				A804956529CEAE9D005B67CD /* Repository */,
+				A804956429CEAE7B005B67CD /* Model */,
 				A804953129CEABCA005B67CD /* AppDelegate.swift */,
 				A804953329CEABCA005B67CD /* SceneDelegate.swift */,
 				A804953529CEABCA005B67CD /* ViewController.swift */,
@@ -146,6 +195,7 @@
 				A804953A29CEABCE005B67CD /* Assets.xcassets */,
 				A804953C29CEABCE005B67CD /* LaunchScreen.storyboard */,
 				A804953F29CEABCE005B67CD /* Info.plist */,
+				A804956329CEAE2A005B67CD /* Network */,
 			);
 			path = prashantHome;
 			sourceTree = "<group>";
@@ -165,6 +215,85 @@
 				A804955429CEABCE005B67CD /* prashantHomeUITestsLaunchTests.swift */,
 			);
 			path = prashantHomeUITests;
+			sourceTree = "<group>";
+		};
+		A804956329CEAE2A005B67CD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A804956129CEAE25005B67CD /* BaseWebservice.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A804956429CEAE7B005B67CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A804957B29CEB13B005B67CD /* AdsBannerResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A804956529CEAE9D005B67CD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A804957929CEB0B9005B67CD /* HomeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A804956629CEAEAA005B67CD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A804956729CEAEE8005B67CD /* BaseViewController.swift */,
+				A804956F29CEAFDB005B67CD /* HomeViewController.swift */,
+				A804957129CEB010005B67CD /* CategoryViewController.swift */,
+				A804957329CEB028005B67CD /* ZoodPayViewController.swift */,
+				A804957529CEB03A005B67CD /* CartViewController.swift */,
+				A804957729CEB049005B67CD /* AccountViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A804956C29CEAF81005B67CD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A804956A29CEAF41005B67CD /* BaseViewModel.swift */,
+				A804959129CEB51E005B67CD /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A804957D29CEB218005B67CD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A804957E29CEB24D005B67CD /* Banner */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A804957E29CEB24D005B67CD /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				A804957F29CEB24D005B67CD /* FSPagerView.swift */,
+				A804958029CEB24D005B67CD /* FSPageViewTransformer.swift */,
+				A804958129CEB24D005B67CD /* FSPagerViewObjcCompat.h */,
+				A804958229CEB24D005B67CD /* FSPagerViewCell.swift */,
+				A804958329CEB24D005B67CD /* FSPagerViewLayoutAttributes.swift */,
+				A804958429CEB24D005B67CD /* FSPageViewLayout.swift */,
+				A804958529CEB24D005B67CD /* FSPageControl.swift */,
+				A804958629CEB24D005B67CD /* FSPagerViewObjcCompat.m */,
+				A804958729CEB24D005B67CD /* FSPagerCollectionView.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		A804959029CEB3D4005B67CD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A804959329CEB574005B67CD /* BannerCollectionViewCell.swift */,
+				A804959429CEB574005B67CD /* ProductCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,9 +535,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A804958C29CEB24D005B67CD /* FSPageViewLayout.swift in Sources */,
+				A804959229CEB51F005B67CD /* HomeViewModel.swift in Sources */,
+				A804959529CEB574005B67CD /* BannerCollectionViewCell.swift in Sources */,
+				A804956829CEAEE9005B67CD /* BaseViewController.swift in Sources */,
 				A804953629CEABCA005B67CD /* ViewController.swift in Sources */,
+				A804958B29CEB24D005B67CD /* FSPagerViewLayoutAttributes.swift in Sources */,
+				A804957629CEB03A005B67CD /* CartViewController.swift in Sources */,
+				A804958A29CEB24D005B67CD /* FSPagerViewCell.swift in Sources */,
+				A804956229CEAE25005B67CD /* BaseWebservice.swift in Sources */,
+				A804957A29CEB0B9005B67CD /* HomeRepository.swift in Sources */,
+				A804959629CEB574005B67CD /* ProductCollectionViewCell.swift in Sources */,
+				A804957C29CEB13B005B67CD /* AdsBannerResponse.swift in Sources */,
 				A804953229CEABCA005B67CD /* AppDelegate.swift in Sources */,
+				A804958F29CEB24D005B67CD /* FSPagerCollectionView.swift in Sources */,
+				A804957229CEB010005B67CD /* CategoryViewController.swift in Sources */,
+				A804958E29CEB24D005B67CD /* FSPagerViewObjcCompat.m in Sources */,
 				A804953429CEABCA005B67CD /* SceneDelegate.swift in Sources */,
+				A804958829CEB24D005B67CD /* FSPagerView.swift in Sources */,
+				A804957429CEB028005B67CD /* ZoodPayViewController.swift in Sources */,
+				A804957029CEAFDB005B67CD /* HomeViewController.swift in Sources */,
+				A804958929CEB24D005B67CD /* FSPageViewTransformer.swift in Sources */,
+				A804958D29CEB24D005B67CD /* FSPageControl.swift in Sources */,
+				A804956B29CEAF41005B67CD /* BaseViewModel.swift in Sources */,
+				A804957829CEB049005B67CD /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
