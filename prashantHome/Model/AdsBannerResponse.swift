@@ -12,6 +12,7 @@ import RxCocoa
 
 class HomeModel : BaseViewModel {
     var bannerData : BehaviorRelay<AdsBannerResponse> = BehaviorRelay(value: AdsBannerResponse())
+    var productData : BehaviorRelay<ProductResponse> = BehaviorRelay(value: ProductResponse())
 }
 
 // MARK: - AdsBannerResponse

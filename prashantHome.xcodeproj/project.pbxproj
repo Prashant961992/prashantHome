@@ -11,7 +11,6 @@
 		4F12626A4722EAD5E2E30078 /* Pods_prashantHome_prashantHomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F304FF39F392BEA40F6B533 /* Pods_prashantHome_prashantHomeUITests.framework */; };
 		A804953229CEABCA005B67CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804953129CEABCA005B67CD /* AppDelegate.swift */; };
 		A804953429CEABCA005B67CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804953329CEABCA005B67CD /* SceneDelegate.swift */; };
-		A804953629CEABCA005B67CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804953529CEABCA005B67CD /* ViewController.swift */; };
 		A804953929CEABCA005B67CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A804953729CEABCA005B67CD /* Main.storyboard */; };
 		A804953B29CEABCE005B67CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A804953A29CEABCE005B67CD /* Assets.xcassets */; };
 		A804953E29CEABCE005B67CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A804953C29CEABCE005B67CD /* LaunchScreen.storyboard */; };
@@ -39,6 +38,10 @@
 		A804959229CEB51F005B67CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804959129CEB51E005B67CD /* HomeViewModel.swift */; };
 		A804959529CEB574005B67CD /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804959329CEB574005B67CD /* BannerCollectionViewCell.swift */; };
 		A804959629CEB574005B67CD /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804959429CEB574005B67CD /* ProductCollectionViewCell.swift */; };
+		A804959829CEC31E005B67CD /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804959729CEC31E005B67CD /* ProductResponse.swift */; };
+		A804959A29CEC4E0005B67CD /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A804959929CEC4E0005B67CD /* HeaderCollectionViewCell.swift */; };
+		A804959C29CEC6CC005B67CD /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A804959B29CEC6CC005B67CD /* Colours.xcassets */; };
+		A8CD4A2829CEE29900306425 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CD4A2729CEE29900306425 /* TabBarViewController.swift */; };
 		AEA5E5A063521BE9BD3EC3A6 /* Pods_prashantHomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6535543652239876BA2173 /* Pods_prashantHomeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +70,6 @@
 		A804952E29CEABCA005B67CD /* prashantHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prashantHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A804953129CEABCA005B67CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A804953329CEABCA005B67CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A804953529CEABCA005B67CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A804953829CEABCA005B67CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A804953A29CEABCE005B67CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A804953D29CEABCE005B67CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,10 @@
 		A804959129CEB51E005B67CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A804959329CEB574005B67CD /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		A804959429CEB574005B67CD /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		A804959729CEC31E005B67CD /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		A804959929CEC4E0005B67CD /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		A804959B29CEC6CC005B67CD /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		A8CD4A2729CEE29900306425 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C58C85E4519FB55482E46A32 /* Pods-prashantHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prashantHomeTests.debug.xcconfig"; path = "Target Support Files/Pods-prashantHomeTests/Pods-prashantHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E788F99007A7F76321ECB98B /* Pods-prashantHome-prashantHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prashantHome-prashantHomeUITests.debug.xcconfig"; path = "Target Support Files/Pods-prashantHome-prashantHomeUITests/Pods-prashantHome-prashantHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8FADF9AC096F4F79E8AE660 /* Pods-prashantHome-prashantHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prashantHome-prashantHomeUITests.release.xcconfig"; path = "Target Support Files/Pods-prashantHome-prashantHomeUITests/Pods-prashantHome-prashantHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +188,8 @@
 		A804953029CEABCA005B67CD /* prashantHome */ = {
 			isa = PBXGroup;
 			children = (
+				A804953A29CEABCE005B67CD /* Assets.xcassets */,
+				A804959B29CEC6CC005B67CD /* Colours.xcassets */,
 				A804959029CEB3D4005B67CD /* Cell */,
 				A804957D29CEB218005B67CD /* Source */,
 				A804956C29CEAF81005B67CD /* ViewModel */,
@@ -190,9 +198,7 @@
 				A804956429CEAE7B005B67CD /* Model */,
 				A804953129CEABCA005B67CD /* AppDelegate.swift */,
 				A804953329CEABCA005B67CD /* SceneDelegate.swift */,
-				A804953529CEABCA005B67CD /* ViewController.swift */,
 				A804953729CEABCA005B67CD /* Main.storyboard */,
-				A804953A29CEABCE005B67CD /* Assets.xcassets */,
 				A804953C29CEABCE005B67CD /* LaunchScreen.storyboard */,
 				A804953F29CEABCE005B67CD /* Info.plist */,
 				A804956329CEAE2A005B67CD /* Network */,
@@ -229,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				A804957B29CEB13B005B67CD /* AdsBannerResponse.swift */,
+				A804959729CEC31E005B67CD /* ProductResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 				A804957329CEB028005B67CD /* ZoodPayViewController.swift */,
 				A804957529CEB03A005B67CD /* CartViewController.swift */,
 				A804957729CEB049005B67CD /* AccountViewController.swift */,
+				A8CD4A2729CEE29900306425 /* TabBarViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -292,6 +300,7 @@
 			children = (
 				A804959329CEB574005B67CD /* BannerCollectionViewCell.swift */,
 				A804959429CEB574005B67CD /* ProductCollectionViewCell.swift */,
+				A804959929CEC4E0005B67CD /* HeaderCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -408,6 +417,7 @@
 				A804953E29CEABCE005B67CD /* LaunchScreen.storyboard in Resources */,
 				A804953B29CEABCE005B67CD /* Assets.xcassets in Resources */,
 				A804953929CEABCA005B67CD /* Main.storyboard in Resources */,
+				A804959C29CEC6CC005B67CD /* Colours.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,18 +549,20 @@
 				A804959229CEB51F005B67CD /* HomeViewModel.swift in Sources */,
 				A804959529CEB574005B67CD /* BannerCollectionViewCell.swift in Sources */,
 				A804956829CEAEE9005B67CD /* BaseViewController.swift in Sources */,
-				A804953629CEABCA005B67CD /* ViewController.swift in Sources */,
 				A804958B29CEB24D005B67CD /* FSPagerViewLayoutAttributes.swift in Sources */,
 				A804957629CEB03A005B67CD /* CartViewController.swift in Sources */,
 				A804958A29CEB24D005B67CD /* FSPagerViewCell.swift in Sources */,
 				A804956229CEAE25005B67CD /* BaseWebservice.swift in Sources */,
 				A804957A29CEB0B9005B67CD /* HomeRepository.swift in Sources */,
 				A804959629CEB574005B67CD /* ProductCollectionViewCell.swift in Sources */,
+				A8CD4A2829CEE29900306425 /* TabBarViewController.swift in Sources */,
 				A804957C29CEB13B005B67CD /* AdsBannerResponse.swift in Sources */,
 				A804953229CEABCA005B67CD /* AppDelegate.swift in Sources */,
+				A804959A29CEC4E0005B67CD /* HeaderCollectionViewCell.swift in Sources */,
 				A804958F29CEB24D005B67CD /* FSPagerCollectionView.swift in Sources */,
 				A804957229CEB010005B67CD /* CategoryViewController.swift in Sources */,
 				A804958E29CEB24D005B67CD /* FSPagerViewObjcCompat.m in Sources */,
+				A804959829CEC31E005B67CD /* ProductResponse.swift in Sources */,
 				A804953429CEABCA005B67CD /* SceneDelegate.swift in Sources */,
 				A804958829CEB24D005B67CD /* FSPagerView.swift in Sources */,
 				A804957429CEB028005B67CD /* ZoodPayViewController.swift in Sources */,

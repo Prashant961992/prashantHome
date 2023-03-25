@@ -10,10 +10,12 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UITabBar.appearance().tintColor = UIColor(named: "deepSeaBlue")!
+        UITabBar.appearance().unselectedItemTintColor = UIColor(named: "blueGrey")!
+        UITabBar.appearance().barTintColor = UIColor(named: "whiteThree")!
+        UITabBarItem.appearance().badgeColor =  UIColor(named: "navBackgroundColor")!
         return true
     }
 

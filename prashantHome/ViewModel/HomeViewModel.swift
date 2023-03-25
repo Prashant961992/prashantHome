@@ -11,6 +11,7 @@ import RxCocoa
 
 class HomeViewModel : BaseViewModel {
     let model : HomeModel = HomeModel()
+    var marketListData = [ProductMarketList]()
     
     func getBannerData(){
         self.isLoading.accept(true)
@@ -26,6 +27,33 @@ class HomeViewModel : BaseViewModel {
                 self.errorMsg.accept( error?.localizedDescription ?? "")
             }
             
+            self.isLoading.accept(false)
+            self.getProductData()
+        }
+    }
+    
+    func getProductData(){
+        self.isLoading.accept(true)
+        
+        let ws = HomeRepository(token:"")
+        var request = [String: Any]()
+        
+        request["page"] = (self.model.productData.value.data?.pagination?.page ?? 0) + 1
+        request["productTagId"] = 13
+        ws.products(parameters: request) { response, error in
+            if response != nil {
+                
+                if let listData = response?.data?.marketList {
+                    for (_, element) in listData.enumerated() {
+                        self.marketListData.append(element)
+                    }
+                }
+                self.model.productData.accept(response ?? ProductResponse())
+                self.isSuccess.accept(true)
+            } else if error != nil {
+                self.isSuccess.accept(false)
+                self.errorMsg.accept( error?.localizedDescription ?? "")
+            }
             self.isLoading.accept(false)
         }
     }

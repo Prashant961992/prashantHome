@@ -18,7 +18,9 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.backgroundColor = UIColor(named: "navBackgroundColor")!
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "navBackgroundColor")!
+        self.view.backgroundColor = UIColor(named: "screenBackground")!
     }
     
     override func didReceiveMemoryWarning() {
