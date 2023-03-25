@@ -6,7 +6,15 @@ target 'prashantHome' do
   use_frameworks!
 
   # Pods for prashantHome
-
+  pod 'Alamofire'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Material'
+  pod 'KRProgressHUD'
+  pod 'Kingfisher'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+    
+    
   target 'prashantHomeTests' do
     inherit! :search_paths
     # Pods for testing
