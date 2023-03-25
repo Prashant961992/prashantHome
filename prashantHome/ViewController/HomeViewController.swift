@@ -15,13 +15,14 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var productCollectionView: UICollectionView!
     let viewModel = HomeViewModel()
     let disposeBag = DisposeBag()
+    @IBOutlet weak var buttonScrollTop: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         productCollectionView.dataSource = self
         productCollectionView.delegate = self
         productCollectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderView")
-
+        
         let searchBar = UISearchBar()
         searchBar.sizeToFit()
         searchBar.searchTextField.backgroundColor = UIColor.white
@@ -31,6 +32,20 @@ class HomeViewController: BaseViewController {
         viewModel.getBannerData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        buttonScrollTop.setTitle("", for: .normal)
+        buttonScrollTop.backgroundColor = UIColor.lightGray
+        buttonScrollTop.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        buttonScrollTop.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        buttonScrollTop.layer.shadowOpacity = 1.0
+        buttonScrollTop.layer.shadowRadius = 0.0
+        buttonScrollTop.layer.cornerRadius = 4.0
+    }
+   
+    @IBAction func actionScrollTop(_ sender: Any) {
+        productCollectionView.setContentOffset(.zero, animated: true)
+    }
     
     func createCallbacks (){
         
@@ -38,7 +53,7 @@ class HomeViewController: BaseViewController {
         viewModel.isSuccess.asObservable()
             .bind{ value in
                 if value{
-                    //                    self.navigationController?.popViewController(animated: true)
+                    
                 }
             }.disposed(by: disposeBag)
         
@@ -86,7 +101,7 @@ class HomeViewController: BaseViewController {
 }
 
 extension HomeViewController : FSPagerViewDataSource {
-
+    
     func numberOfItems(in pagerView: FSPagerView) -> Int {
         return self.viewModel.model.bannerData.value.data?.mainBanner?.count ?? 0
     }
@@ -117,7 +132,7 @@ extension HomeViewController : UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       
+        
         if indexPath.section == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCollectionViewCell", for: indexPath) as! BannerCollectionViewCell
             cell.adsBanner.isInfinite = true
@@ -138,11 +153,11 @@ extension HomeViewController : UICollectionViewDataSource{
             
             cell.labelRate.text = String(format: "Rank: %@", "\(data.rank ?? 0)")
             cell.imageProduct.kf.setImage(with: url,
-            placeholder: UIImage(named:"noData"),
-            options: [.transition(ImageTransition.fade(1))],
-            progressBlock: { receivedSize, totalSize in },
-            completionHandler:  nil)
-           
+                                          placeholder: UIImage(named:"noData"),
+                                          options: [.transition(ImageTransition.fade(1))],
+                                          progressBlock: { receivedSize, totalSize in },
+                                          completionHandler:  nil)
+            
             return cell
         }
     }

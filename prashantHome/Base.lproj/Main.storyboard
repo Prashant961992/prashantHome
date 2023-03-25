@@ -201,18 +201,33 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTU-VP-P5c">
+                                <rect key="frame" x="354" y="753" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Z1-Id-ddt"/>
+                                    <constraint firstAttribute="width" constant="50" id="s8D-QU-ThT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="uparrow"/>
+                                <connections>
+                                    <action selector="actionScrollTop:" destination="V82-4H-y4Q" eventType="touchUpInside" id="AOR-Dx-BwA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L1V-72-jmb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="YNL-Wn-yia" secondAttribute="bottom" id="1uq-Df-Dze"/>
+                            <constraint firstItem="L1V-72-jmb" firstAttribute="trailing" secondItem="eTU-VP-P5c" secondAttribute="trailing" constant="10" id="CUL-h7-mVg"/>
                             <constraint firstItem="YNL-Wn-yia" firstAttribute="leading" secondItem="L1V-72-jmb" secondAttribute="leading" id="Lhd-aS-4Ob"/>
                             <constraint firstItem="YNL-Wn-yia" firstAttribute="trailing" secondItem="L1V-72-jmb" secondAttribute="trailing" id="dVR-MO-clh"/>
+                            <constraint firstItem="L1V-72-jmb" firstAttribute="bottom" secondItem="eTU-VP-P5c" secondAttribute="bottom" constant="10" id="e2t-2s-dD0"/>
                             <constraint firstItem="YNL-Wn-yia" firstAttribute="top" secondItem="J4c-8i-SZG" secondAttribute="top" id="w8g-sl-S7w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RVX-xr-MXg"/>
                     <connections>
+                        <outlet property="buttonScrollTop" destination="eTU-VP-P5c" id="nzf-DW-Xjk"/>
                         <outlet property="productCollectionView" destination="YNL-Wn-yia" id="glG-VG-z5J"/>
                     </connections>
                 </viewController>
@@ -478,6 +493,7 @@
         <image name="home" width="28" height="28"/>
         <image name="pay" width="28" height="28"/>
         <image name="profile" width="28" height="28"/>
+        <image name="uparrow" width="30" height="30"/>
         <namedColor name="navBackgroundColor">
             <color red="1" green="0.80784313725490198" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
