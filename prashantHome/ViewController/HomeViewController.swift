@@ -20,8 +20,11 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         productCollectionView.dataSource = self
         productCollectionView.delegate = self
-        
-        
+        productCollectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderView")
+
+        let searchBar = UISearchBar()
+        searchBar.sizeToFit()
+        self.navigationItem.titleView = searchBar
         createCallbacks()
         viewModel.getBannerData()
     }
@@ -72,12 +75,13 @@ class HomeViewController: BaseViewController {
         let frameHeight = scrollView.frame.size.height
         if offsetY > contentHeight - frameHeight {
             if self.viewModel.isLoading.value == false {
-                viewModel.getProductData()
+                if self.viewModel.model.productData.value.data?.pagination?.page != self.viewModel.model.productData.value.data?.pagination?.totalPage {
+                    viewModel.getProductData()
+                }
             }
         }
     }
 }
-
 
 extension HomeViewController : FSPagerViewDataSource {
 
@@ -93,26 +97,18 @@ extension HomeViewController : FSPagerViewDataSource {
         
         cell.imageView?.contentMode = .scaleAspectFill
         cell.imageView?.clipsToBounds = true
-        
-//        cell.textLabel?.text = index.description+index.description
         return cell
     }
 }
 
 extension HomeViewController : UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 0 {
             return 1
-        } else if section == 1 {
-            if (self.viewModel.model.bannerData.value.data?.recommended != nil) {
-                return 1
-            } else {
-                return 0
-            }
         } else {
             return self.viewModel.marketListData.count
         }
@@ -129,10 +125,6 @@ extension HomeViewController : UICollectionViewDataSource{
             cell.adsBanner.dataSource = self
             cell.adsBanner.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
             cell.adsBanner.automaticSlidingInterval = 2.0
-            return cell
-        } else if indexPath.section == 1 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderCollectionViewCell", for: indexPath) as! HeaderCollectionViewCell
-            cell.labelName.text = self.viewModel.model.bannerData.value.data?.recommended?.name ?? ""
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
@@ -153,25 +145,47 @@ extension HomeViewController : UICollectionViewDataSource{
         }
     }
     
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if indexPath.section == 1 {
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderView", for: indexPath)
+            
+            if kind == UICollectionView.elementKindSectionHeader {
+                // Create a view for the header view
+                let headerContentView = UIView(frame: CGRect(x: 0, y: 0, width: headerView.frame.size.width, height: headerView.frame.size.height))
+                headerContentView.backgroundColor = UIColor.clear
+                let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: headerContentView.frame.size.width, height: headerContentView.frame.size.height))
+                headerLabel.text = self.viewModel.model.bannerData.value.data?.recommended?.name ?? ""
+                headerLabel.textColor = UIColor.black
+                headerLabel.textAlignment = .center
+                headerContentView.addSubview(headerLabel)
+                headerView.addSubview(headerContentView)
+            }
+            
+            return headerView
+        } else {
+            return UICollectionReusableView()
+        }
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section == 1 {
+            return CGSize(width: productCollectionView.bounds.width, height: 50.0)
+        } else {
+            return CGSize(width: productCollectionView.bounds.width, height: 0)
+        }
+    }
 }
 
 extension HomeViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
-            return CGSize(width: productCollectionView.bounds.width, height: 300)
-        } else if indexPath.section == 1 {
-            return CGSize(width: productCollectionView.bounds.width, height: 50)
+            return CGSize(width: productCollectionView.bounds.width, height: 200)
         } else {
-            return CGSize(width: (productCollectionView.bounds.width / 2) , height: 330)
+            return CGSize(width: (productCollectionView.bounds.width / 2) , height: 315)
         }
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
 }

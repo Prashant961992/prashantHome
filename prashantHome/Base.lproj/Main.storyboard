@@ -58,14 +58,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="145"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VQD-eC-0Zp" customClass="FSPagerView" customModule="prashantHome" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQD-eC-0Zp" customClass="FSPagerView" customModule="prashantHome" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="383" height="145"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isInfinite" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="VQD-eC-0Zp" secondAttribute="trailing" id="8DC-V1-2i7"/>
+                                                <constraint firstAttribute="bottom" secondItem="VQD-eC-0Zp" secondAttribute="bottom" id="CY7-SA-q3x"/>
+                                                <constraint firstItem="VQD-eC-0Zp" firstAttribute="top" secondItem="IHx-T6-iEe" secondAttribute="top" id="Lq4-Gc-5aM"/>
+                                                <constraint firstItem="VQD-eC-0Zp" firstAttribute="leading" secondItem="IHx-T6-iEe" secondAttribute="leading" id="NBo-xR-VSV"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="383" height="145"/>
                                         <connections>
@@ -99,14 +104,14 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="Tx4-rS-yHL" customClass="ProductCollectionViewCell" customModule="prashantHome" customModuleProvider="target">
-                                        <rect key="frame" x="128" y="195" width="158" height="327"/>
+                                        <rect key="frame" x="128" y="195" width="158" height="314"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v76-Gw-FE5">
-                                            <rect key="frame" x="0.0" y="0.0" width="158" height="327"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="314"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqW-67-VFm">
-                                                    <rect key="frame" x="5" y="5" width="148" height="297"/>
+                                                    <rect key="frame" x="5" y="5" width="148" height="284"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S38-HN-HWX">
                                                             <rect key="frame" x="0.0" y="0.0" width="148" height="150"/>
@@ -185,7 +190,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="158" height="327"/>
+                                        <size key="customSize" width="158" height="314"/>
                                         <connections>
                                             <outlet property="imageProduct" destination="S38-HN-HWX" id="2qV-I7-fH1"/>
                                             <outlet property="labelCrossPrice" destination="RM2-RX-AnI" id="xUb-Dw-y2N"/>

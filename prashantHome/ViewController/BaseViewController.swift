@@ -25,7 +25,6 @@ class BaseViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
     
     func showSnackbar(_ message : String) {
